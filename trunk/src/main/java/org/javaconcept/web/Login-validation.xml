@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<validators>
+    <field name="username">
+        <field-validator type="requiredstring">
+            <message key="requiredstring"/>
+        </field-validator>
+    </field>
+    <field name="password">
+        <field-validator type="requiredstring">
+            <message key="requiredstring"/>
+        </field-validator>
+    </field>
+</validators>

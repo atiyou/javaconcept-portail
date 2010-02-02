@@ -1,0 +1,5 @@
+HelloWorld.message= Struts est en cours d'exécution ...
+requiredstring = ${getText(fieldName)} est requis.
+password = Mot de passe
+username = Nom d'utilisateur
+Missing.message = Cette fonctionnalité est en cours de construction. Veuillez réessayer plutard
