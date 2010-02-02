@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="org.javaconcept.web" namespace="/org.javaconcept.web" extends="struts-default">
+
+        <action name="HelloWorld" class="org.javaconcept.web.HelloWorld">
+            <result>/example/HelloWorld.jsp</result>
+        </action>
+
+        <action name="Login_*" method="{1}" class="org.javaconcept.web.Login">
+            <result name="input">/jsp/Login.jsp</result>
+            <result type="redirectAction">Menu</result>
+        </action>
+
+        <action name="*" class="org.javaconcept.web.ExampleSupport">
+            <result>/org.javaconcept.web/{1}.jsp</result>
+        </action>
+
+        <!-- Add actions here -->
+    </package>
+</struts>
